@@ -5,3 +5,4 @@ Our product is a website used to extract key points from an input file. You uplo
 I, a student, want to get a summary idea of paper instead of reading it from top to bottom.
 I, a busy white collar, want to have a total idea of news without wasting time on details.
 ## System Architecture
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/master/sys_arc.png"/></div>
