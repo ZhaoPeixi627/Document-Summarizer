@@ -1,6 +1,6 @@
 # Document-Summarizer
 ## Project Discription
-Producr Mission: The mission of this product is to be able to summarize a input txt file or pdf file by users. Through some NLP algorithm, we out put a shorter txt file with the important information of the input file.
+Product Mission: The mission of this product is to be able to summarize a input txt file or pdf file by users. Through some NLP algorithm, we out put a shorter txt file with the important information of the input file.
 ## MVP
 The product will at a minimum be able to summarize the user's input txt file and pdf file and output the main information of the file as a txt file. If time permits, we will build a uers' interface on a website that user can input their file on website and get the result through our website. Also if time permits, we will realize translation of the input file. For example if your input file is a txt file which using Chinese words or other languagues, we can also able to summarize the main idea of the input file.
 ## User Stories
