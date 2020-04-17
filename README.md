@@ -17,3 +17,29 @@ The product will at a minimum be able to summarize the user's input txt file and
 
 ### front end
 A website that can upload file and download generated file.
+## Preparation
+* Install NLTK http://www.nltk.org/install.html
+* Install NLTK data https://www.nltk.org/data.html
+## Implementation  
+The python implementation we used is from https://github.com/acatovic/textrank, which is an implementation of TextRank: Bringing Order into Texts (Mihalcea and Tarau, 2004). The paper proposed two unsupervised methods to extract keywords and summarize document.
+* It uses undirected graph to extract keywords and similarity matrix for summarization.
+* Python NLTK package is a very advanced NLP tool, here it's used for Tokenization, which can seperate words from sentences.
+* NLTK's built-in stopwords list is used to remove unimportant words.
+* Part-of-Speech Tagging is also employed to detect nouns and adjectives.  
+With this implementation, we can extract a setting number of keywords from document summarize it in a setting number of sentences.
+## Examples
+We use a piece of Coranavirus news as an example,named input.txt:
+> Centers for Disease Control and Prevention Director Dr. Robert Redfield issued new guidelines for essential workers who have been exposed to the coronavirus, saying individuals would need to be asymptomatic to return to work. The guidelines, he said, are aimed at keeping essential workers, including first responders, health care workers, employees in the food supply chain and others at work -- even if they might have been exposed to someone who has coronavirus. “These are individuals that have been within six feet of a confirmed case or a suspected case so that they can, under certain circumstances, they can go back to work if they are asymptomatic,” Redfield said. Redfield said those individuals could return to their jobs if they take their temperature before work, wear a face mask at all times and practice social distancing at work. He reiterated that people should stay home if they feel sick, should not share items used on or near their face and should refrain from congregating in break rooms and other crowded places. The CDC’s new guidelines also outlined steps employers should take, including checking temperatures before employees start work, sending anyone who becomes sick home and cleaning commonly touched surfaces more frequently, among others.
+* Extract 10 keywords from the news:  
+```python textrank.py -p document.txt -l 10```
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_keywords.png"/></div>
+
+* Summarize the news in 2 sentences  
+```python textrank.py -p document.txt -s -l 3```
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_summarize.png"/></div>  
+
+## References
+* https://github.com/acatovic/textrank
+* R. Mihalcea and P. Tarau. 2004. TextRank: Bringing Order into Texts.
+* D. Greene and P. Cunningham. 2006. Practical Solutions to the Problem of Diagonal Dominance in Kernel Document Clustering. In Proc. 23rd International Conference on Machine learning (ICML'06). ACM Press.
+* S. Brin and L. Page. 1998. The anatomy of large-scale hyper-textual Web search engine. Computer Networks and ISDN Systems, 30(1-7)
