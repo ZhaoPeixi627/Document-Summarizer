@@ -12,7 +12,9 @@ The product will at a minimum be able to summarize the user's input txt file and
 * After selecting the NLP api or algorithm, we build out back end for our product.
 * Finally build our front end(users' interface).
 ## System Architecture
-### back end
+### Back end
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys.jpg"/></div>  
+
 ## Preparation
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
