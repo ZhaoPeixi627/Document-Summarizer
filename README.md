@@ -31,11 +31,11 @@ We use a piece of Coronavirus news as an example, named input.txt:
 If the generated file is named newfile.txt
 * Extract 10 keywords from the news:  
 ```python textrank.py -p input.txt -l 10 -t newfile```
-<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_keywords.png"/></div>
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/test_extract.png"/></div>
 
 * Summarize the news in 2 sentences  
 ```python textrank.py -p input.txt -s -l 3 -t newfile```
-<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_summarize.png"/></div>  
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/test_sum.png"/></div>  
 
 ## Front end
 A website that can upload file and download generated file.  
