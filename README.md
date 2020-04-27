@@ -13,7 +13,6 @@ The product will at a minimum be able to summarize the user's input txt file and
 * Finally build our front end(users' interface).
 ## System Architecture
 ### back end
-<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys_arc.jpg"/></div>
 ## Preparation
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
