@@ -14,11 +14,6 @@ The product will at a minimum be able to summarize the user's input txt file and
 ## System Architecture
 ### back end
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys_arc.jpg"/></div>
-
-### front end
-A website that can upload file and download generated file.  
-We create a web interface with using python flask.
-
 ## Preparation
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
@@ -39,6 +34,12 @@ We use a piece of Coronavirus news as an example, named input.txt:
 * Summarize the news in 2 sentences  
 ```python textrank.py -p input.txt -s -l 3```
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_summarize.png"/></div>  
+
+## Front end
+A website that can upload file and download generated file.  
+We create a web interface with using python flask.  
+<div align = center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/web.png"/></div>  
+With this interface, we can accomplish upload text file, process file and download summarized file.  
 
 ## References
 * https://github.com/acatovic/textrank
