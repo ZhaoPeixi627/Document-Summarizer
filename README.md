@@ -28,12 +28,13 @@ With this implementation, we can extract a setting number of keywords from docum
 ## Examples
 We use a piece of Coronavirus news as an example, named input.txt:
 > Centers for Disease Control and Prevention Director Dr. Robert Redfield issued new guidelines for essential workers who have been exposed to the coronavirus, saying individuals would need to be asymptomatic to return to work. The guidelines, he said, are aimed at keeping essential workers, including first responders, health care workers, employees in the food supply chain and others at work -- even if they might have been exposed to someone who has coronavirus. “These are individuals that have been within six feet of a confirmed case or a suspected case so that they can, under certain circumstances, they can go back to work if they are asymptomatic,” Redfield said. Redfield said those individuals could return to their jobs if they take their temperature before work, wear a face mask at all times and practice social distancing at work. He reiterated that people should stay home if they feel sick, should not share items used on or near their face and should refrain from congregating in break rooms and other crowded places. The CDC’s new guidelines also outlined steps employers should take, including checking temperatures before employees start work, sending anyone who becomes sick home and cleaning commonly touched surfaces more frequently, among others.
+If the generated file is named newfile.txt
 * Extract 10 keywords from the news:  
-```python textrank.py -p input.txt -l 10```
+```python textrank.py -p input.txt -l 10 -t newfile```
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_keywords.png"/></div>
 
 * Summarize the news in 2 sentences  
-```python textrank.py -p input.txt -s -l 3```
+```python textrank.py -p input.txt -s -l 3 -t newfile```
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/example_summarize.png"/></div>  
 
 ## Front end
