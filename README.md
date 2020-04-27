@@ -16,7 +16,9 @@ The product will at a minimum be able to summarize the user's input txt file and
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys_arc.jpg"/></div>
 
 ### front end
-A website that can upload file and download generated file.
+A website that can upload file and download generated file.  
+We create a web interface with using python flask.
+
 ## Preparation
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
