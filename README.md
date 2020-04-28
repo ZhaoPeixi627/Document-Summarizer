@@ -40,9 +40,11 @@ If the generated file is named newfile.txt
 
 ## Front end
 A website that can upload file and download generated file.  
-We create a web interface with using python flask.  
+We create a web interface with using python flask and we uploaded it to an ec2 instance.  
 <div align = center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/web.png"/></div>  
 With this interface, we can accomplish upload text file, process file and download summarized file.  
+We also upload our project to ec2 instance, the website is  
+"ec2-3-19-228-191.us-east-2.compute.amazonaws.com:5000".
 
 ## References
 * https://github.com/acatovic/textrank
