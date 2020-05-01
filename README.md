@@ -24,7 +24,7 @@ In TextRank, the only difference is that we consider sentences instead of pages.
 * First seperate the text file into sentences.
 * For each sentence, apply tokenization, Part-of-Speech tagging and filtering. Detect the important words like noun, verb, and adjective and delete the stoplist words.
 * Then create a keyword graph G=(V,E). The nodes represents the keywords, and then use co-occurence to create edges between nodes.
-* Apply the textrank formula to get weighted graph, sort the keywords by wweight and get the top k keywrods.  
+* Apply the textrank formula to get weighted graph, sort the keywords by weight and get the top k keywrods.  
 ### Textrank for summarization
 * The first step would be to concatenate all the text contained in the articles and split the text into individual sentences.
 * In the next step, we will find vector representation (word embeddings) for each and every sentence.
