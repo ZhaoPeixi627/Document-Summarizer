@@ -2,7 +2,7 @@
 ## Project Discription
 Product Mission: The mission of this product is to be able to summarize an input txt file by users. Through some NLP algorithm, we out put a shorter txt file with the important information of the input file.
 ## MVP
-The product will at a minimum be able to summarize the user's input txt file and pdf file and output the main information of the file as a txt file. If time permits, we will build a uers' interface on a website that user can input their file on website and get the result through our website. Also if time permits, we will realize translation of the input file. For example if your input file is a txt file which using Chinese words or other languagues, we can also able to summarize the main idea of the input file.
+The product will at a minimum be able to summarize the user's input txt file and output the main information of the file as a txt file. If time permits, we will build a uers' interface on a website that user can input their file on website and get the result through our website. Also if time permits, we will realize translation of the input file. For example if your input file is a txt file which using Chinese words or other languagues, we can also able to summarize the main idea of the input file.
 ## User Stories
 * I, a student, want to get a summary idea of paper instead of reading it from top to bottom.
 * I, a busy white collar, want to have a total idea of news without wasting time on details.
@@ -19,7 +19,7 @@ The product will at a minimum be able to summarize the user's input txt file and
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
 ## Implementation  
-The python implementation we used is from https://github.com/acatovic/textrank, which is an implementation of TextRank: Bringing Order into Texts (Mihalcea and Tarau, 2004). The paper proposed two unsupervised methods to extract keywords and summarize document.
+The python implementation we used is from https://github.com/acatovic/textrank, which is an implementation of TextRank: Bringing Order into Texts (Mihalcea and Tarau, 2004). The paper proposed two unsupervised methods to extract keywords and summarize document, respectively.
 * It uses undirected graph to extract keywords and similarity matrix for summarization.
 * Python NLTK package is a very advanced NLP tool, here it's used for Tokenization, which can seperate words from sentences.
 * NLTK's built-in stopwords list is used to remove unimportant words.
