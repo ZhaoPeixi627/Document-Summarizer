@@ -22,7 +22,7 @@ Textrank is an algorithm orginated from Pagerank, designed by Google in 1997. Th
 In TextRank, the only difference is that we consider sentences instead of pages.
 ### Textrank for keywords extraction
 * First seperate the text file into sentences.
-* For each sentence, apply tokenization, Part-of-Speech tagging and filtering. Detect the important words like noun, verb, and adjective and delete the stoplist words.
+* For each sentence, apply tokenization, Part-of-Speech tagging and filtering. Detect the important words like noun, verb, and adjective and delete the unimportant words.
 * Then create a keyword graph G=(V,E). The nodes represents the keywords, and then use co-occurence to create edges between nodes.
 * Apply the textrank formula to get weighted graph, sort the keywords by weight and get a certain number of top-ranked keywrods.  
 ### Textrank for summarization
