@@ -27,13 +27,14 @@ def index():
                 return redirect(request.url)
             file = request.files['file']
             newname = request.form['newname']
+            no1 = request.form['no1']
             if file.filename == '':
                 print('No file selected')
                 return redirect(request.url)
             if file and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-                process_file(os.path.join(app.config['UPLOAD_FOLDER'], filename), filename, newname)
+                process_file(os.path.join(app.config['UPLOAD_FOLDER'], filename), filename, newname,no1)
                 return redirect(url_for('uploaded_file', newname=newname))
         elif request.form['BTN']=='Download_Keywords':
             if 'file' not in request.files:
@@ -41,32 +42,33 @@ def index():
                 return redirect(request.url)
             file = request.files['file']
             keywords = request.form['keywords']
+            no2 = request.form['no2']
             if file.filename == '':
                 print('No file selected')
                 return redirect(request.url)
             if file and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-                process_file1(os.path.join(app.config['UPLOAD_FOLDER'], filename), filename, keywords)
+                process_file1(os.path.join(app.config['UPLOAD_FOLDER'], filename), filename, keywords,no2)
                 return redirect(url_for('uploaded_file1', keywords=keywords)) 
     return render_template('main.html')
 
-def process_file1(path,filename,keywords):
+def process_file1(path,filename,keywords,no2):
     input_file = open(app.config['UPLOAD_FOLDER'] + filename)
     content = input_file.read()
     with open('input.txt','w') as f:
         f.write(str(content))
     f.close()
-    args = 'python3 textrank.py -p input.txt -l 10 -t'+' '+str(keywords)
+    args = 'python3 textrank.py -p input.txt -l '+str(no2)+' -t'+' '+str(keywords)
     os.system(args)
 
-def process_file(path, filename, newname):
+def process_file(path, filename, newname,no1):
     input_file = open(app.config['UPLOAD_FOLDER'] + filename)
     content = input_file.read()
     with open('new.txt','w') as f:
         f.write(str(content))
     f.close()
-    args = 'python3 textrank.py -p new.txt -s -l 3 -t'+' '+str(newname)
+    args = 'python3 textrank.py -p new.txt -s -l '+str(no1)+' -t'+' '+str(newname)
     os.system(args)
 
 @app.route('/<newname>')
@@ -79,5 +81,5 @@ def uploaded_file1(keywords):
 
 
 if __name__ == '__main__':
-    #app.run(debug = True)
+    # app.run(debug = True)
     app.run(host = '0.0.0.0', port = 5000)
