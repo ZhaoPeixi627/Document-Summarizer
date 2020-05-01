@@ -18,7 +18,7 @@ The product will at a minimum be able to summarize the user's input txt file and
 ## Algorithm  
 Textrank is an algorithm orginated from Pagerank, designed by Google in 1997. The main idea of Pagerank is:  
 * Important pages are linked by important pages.
-* The PageRank value of a page is the probability of a user visiting that page.
+* The PageRank value of a page is the probability of a user visiting that page.  
 In TextRank, the only difference is that we consider sentences instead of pages.
 ### Textrank for keywords extraction
 * First seperate the text file into sentences.
