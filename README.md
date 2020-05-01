@@ -35,7 +35,7 @@ In TextRank, the only difference is that we consider sentences instead of pages.
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
 ## Implementation  
-The python implementation we used is from https://github.com/acatovic/textrank, which is an implementation of TextRank: Bringing Order into Texts (Mihalcea and Tarau, 2004). The paper proposed two unsupervised methods to extract keywords and summarize document, respectively.
+The python implementation we used is from Bringing Order into Texts (Mihalcea and Tarau, 2004). The paper proposed two unsupervised methods to extract keywords and summarize document, respectively.
 * It uses undirected graph to extract keywords and similarity matrix for summarization.
 * Python NLTK package is a very advanced NLP tool, here it's used for Tokenization, which can seperate words from sentences.
 * NLTK's built-in stopwords list is used to remove unimportant words.
