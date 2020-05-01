@@ -15,6 +15,22 @@ The product will at a minimum be able to summarize the user's input txt file and
 ### Back end
 <div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys.jpg"/></div>  
 
+## Algorithm  
+Textrank is an algorithm orginated from Pagerank, designed by Google in 1997. The main idea of Pagerank is:  
+* Important pages are linked by important pages.
+* The PageRank value of a page is the probability of a user visiting that page.
+In TextRank, the only difference is that we consider sentences instead of pages.
+### Textrank for keywords extraction
+* First seperate the text file into sentences.
+* For each sentence, apply tokenization, Part-of-Speech tagging and filtering. Detect the important words like noun, verb, and adjective and delete the stoplist words.
+* Then create a keyword graph G=(V,E). The nodes represents the keywords, and then use co-occurence to create edges between nodes.
+* Apply the textrank formula to get weighted graph, sort the keywords by wweight and get the top k keywrods.  
+### Textrank for summarization
+* The first step would be to concatenate all the text contained in the articles and split the text into individual sentences.
+* In the next step, we will find vector representation (word embeddings) for each and every sentence.
+* Similarities between sentence vectors are then calculated and stored in a matrix.
+* The similarity matrix is then converted into a graph, with sentences as vertices and similarity scores as edges, for sentence rank calculation.
+* Finally, a certain number of top-ranked sentences form the final summary.
 ## Preparation
 * Install NLTK http://www.nltk.org/install.html
 * Install NLTK data https://www.nltk.org/data.html
