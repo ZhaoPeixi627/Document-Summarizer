@@ -59,7 +59,7 @@ A website that can upload file and download generated file.
 We create a web interface with using python flask and we uploaded it to an ec2 instance.  
 <div align = center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/interface.png"/></div>  
 With this interface, we can accomplish upload text file, process file and download summarized file.  
-We also upload our project to ec2 instance。
+We also upload our project to ec2 instance.
 ### Website
 "http://ec2-3-132-213-15.us-east-2.compute.amazonaws.com:5000/".
 
