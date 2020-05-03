@@ -13,7 +13,7 @@ The product will at a minimum be able to summarize the user's input txt file and
 * Finally build our front end(users' interface).
 ## System Architecture
 ### Back end
-<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/sys.jpg"/></div>  
+<div align=center><img src="https://github.com/ZhaoPeixi627/Document-Summarizer/blob/master/structure.jpg"/></div>  
 
 ## Algorithm  
 Textrank is an algorithm orginated from Pagerank, designed by Google in 1997. The main idea of Pagerank is:  
